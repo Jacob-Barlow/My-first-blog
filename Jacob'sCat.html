@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+body {background-color: lime;}
+h1	 {color: gray;)
+p	 {color: blue;)
+</style>
+<script>
+function submitform() {
+  var text1 = document.getElementById("name1").value;
+  var text2 = document.getElementById("quest").value;
+  alert('Is this your name? '+ text1 +'\nIs this your Question? ' +text2);
+}
+</script>
+
+<body>
+<div class="flex-container">
+  <div>
+    <h1>Wazerton's World</h1>
+
+    <p>This is Wizard, he is a plump and happy kitty.</p>
+
+    <img src="Wiz1.jpg" alt="Wiz" width="500px" height="333px"/>
+    <p>This is him being cute</p>
+  </div>
+  <div>
+	<img src="HowToCat.jpg" alt="ded" width="500px" height="600px"/>
+	<p>This is him being a jerk</p>
+  </div>
+</div>
+<div>
+  <h2>Feel free to contact me for information about Wizard!</h2>
+  Name (first name and last initial):<br>
+  <input type="text" name="name" id="name1">
+  <br>
+  Question:<br>
+  <input type="text" name="question" id="quest">
+  <br><br>
+  <button type="button" onclick="submitform()">
+  Submit
+  </button>
+</div>
+
+
+
+
+
+</body>
+</html>
